@@ -32,7 +32,7 @@ public class GRUPO5 extends AppCompatActivity {
                    progressText.setText(""+i);
                    progressBar.setProgress(i);
                    i++;
-                   handler.postDelayed(this,100);
+                   handler.postDelayed(this,40);
                    if(i ==100){
                        Intent intent = new Intent(GRUPO5.this, MenuPrincipal.class);
                        activity.startActivity(intent);

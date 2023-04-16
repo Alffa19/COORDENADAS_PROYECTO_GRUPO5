@@ -3,6 +3,8 @@ package com.eitsistemas.coordenadas;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.Intent;
@@ -136,6 +138,8 @@ public class MainActivity extends AppCompatActivity {
 //            tdireccion.setText(Text);
             this.mainActivity.setLocation(loc);
         }
+
+
         @Override
         public void onProviderDisabled(String provider) {
             // Este metodo se ejecuta cuando el GPS es desactivado

@@ -3,6 +3,7 @@ package com.eitsistemas.coordenadas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
@@ -30,11 +31,12 @@ public class ListaCoordenadas extends AppCompatActivity {
         }else{
             while (data.moveToNext()){
                 listado.add(data.getString(1));
-                ListAdapter listAdapter = new ArrayAdapter<>(
-                        this, android.R.layout.simple_expandable_list_item_1,listado);
+                ListAdapter listAdapter = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1,listado);
                 listac.setAdapter(listAdapter);
 
             }
         }
     }
+
+
 }

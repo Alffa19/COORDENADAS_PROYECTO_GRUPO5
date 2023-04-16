@@ -50,4 +50,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor data = db.rawQuery("SELECT * FROM "+ TABLE_NOMBRE,null);
         return data;
     }
+
+
 }
